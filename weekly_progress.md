@@ -46,3 +46,22 @@
     - Observed slightly better results with raw sequences.
     - I think that the use of **ESM2 (150M parameters)** might limit the embedding’s expressiveness.
     - Plan to upgrade to **ESM3** next week for improved embedding quality.
+
+## Week 4:
+
+- **Studying ESM3 Documentation:**
+
+  - Spent time reading and understanding the how **ESM3** works and how to use it.
+  - **ESM3 GitHub Repository:** [ESM GitHub](https://github.com/evolutionaryscale/esm)
+
+- **Experimentation with ESMC:**
+
+  - Attempted to use **ESMC** for sequence alignment but got worse results compared to **ESM2**.
+  - Discovered that for my current algorithm a bigger model can lead to a worse results.
+
+- **Model Performance Comparison:**
+  - Conducted a comparative analysis of different models:
+    - **esm2_t30_150M_UR50D** > **esm2_t33_650M_UR50D** > **esmc_300m** > **esmc_600m**
+  - Surprisingly, the smaller **ESM2 (150M)** model outperformed larger models, indicating to possible results :
+    1. A problem with my algorithm implementation.
+    2. Larger models can capture more complex relationships and features, which might not be well-suited for raw embedding vector comparison, leading to worse results compared to smaller models.

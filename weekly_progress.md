@@ -65,3 +65,14 @@
   - Surprisingly, the smaller **ESM2 (150M)** model outperformed larger models, indicating to possible results :
     1. A problem with my algorithm implementation.
     2. Larger models can capture more complex relationships and features, which might not be well-suited for raw embedding vector comparison, leading to worse results compared to smaller models.
+
+## Week 5+6
+
+- **Dataset for Structure Alignment:**
+
+  - Tested various datasets but settled on the [AlphaFold DataSet (UP000000799)](https://alphafold.ebi.ac.uk/download).
+
+- **ESM3 Integration:**
+  - Studied **ESM3** documentation and resolved challenges in generating embeddings from PDB files.
+  - Successfully applied **ESM3 embeddings** to the alignment algorithm.
+  - Haven't tested or compared the results of the structure alignment yet.
